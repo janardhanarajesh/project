@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Platform game engine</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<style type="text/css">
+  a{
+    font-size: 15px;
+    width: 180px;
+    background-color:white;
+    color: black;
+  }
+  a:hover{
+    font-size: 20px;
+  }
+</style>
+<body>
+        <button onclick="clickt()" style="width:50px;height:30px;position:fixed;box-shadow: 1px 1px 8px mediumturquoise;background-color:lightgoldenrodyellow ;border-radius: 5px;">Menu</button>
+      <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  
+      <div style="height:370px;width:180px;background-color:brown;position: fixed;top:50px;border-radius: 8px;text-align:center;box-shadow: 1px 1px 10px aquamarine;background-color: white;" id="men1">
+        <br>
+      
+        <a href="../../main.html">Home</a>
+        <br>
+        <br>
+<a  href="../../music app/Music web.html" >Music Player</a>
+<br>    
+   
+
+<br>  
+  <a href="../../caluclatorroute.html">Caluclator</a>
+        <br>
+        <br>
+
+
+        <a href="../../gameroute.html">Games</a>
+        <br>
+        <br>
+
+                <a href="../../converterroute.html">Converter</a>
+
+        <br>
+        <br>
+        
+
+<a href="../../library/books.html" >Web library</a>
+<br>
+<br>
+    <a href="../../quize/quize1.html">quiz</a>
+<br>
+    <br>
+    <a href="../periodic.html" class='a1' > periodic table</a>
+      </div>
+<!-- partial:index.partial.html -->
+<canvas id="canvas"></canvas>
+
+<p>
+  Use the left, right and up arrow keys to move.
+</p>
+<br>
+<!-- partial -->
+  <script  src="./script.js"></script>
+<script type="text/javascript">
+     kt=document.getElementById('men1').style.display="none"
+
+        let i=0;
+clickt=()=>
+{
+i++;
+let kt=document.getElementById('men1').style.display="block"
+if(i==2)
+{
+let kt=document.getElementById('men1').style.display="none"
+i=0;
+}
+}
+</script>
+</body>
+</html>

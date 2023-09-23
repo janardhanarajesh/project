@@ -1,0 +1,81 @@
+
+#d1fc{
+	height:720px;
+	width:1270x;
+	background-image: url(images/backgroundimage.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+*{
+	box-sizing: border-box;
+	margin:0px;
+
+}
+@keyframes anim{
+	from{width:0px;font-size: 0px}
+	to{width:200px;font-size: 18px}
+}
+#d2{
+	height:520px;
+	width:200px;
+	background-color:rgba(20, 20, 20, 0.8);
+	float:right;
+	border-radius:10px;
+	box-shadow: 2px 2px 10px white;
+	position: fixed;
+	left:1000px;
+	animation-name:anim;
+	animation-duration:1s;
+	font-size: 18px;
+
+}
+#btn_1{
+	background-color:rgba(230, 230, 230, 0.8);
+	border-radius:6px;
+	width:60px;
+	height: 38px;
+	float:right;
+position: fixed;
+left:1210px;
+box-shadow: 1px 1px 4px whitesmoke;
+}
+.a1{
+	text-decoration: none;
+	color:white;
+	font-size:80%;
+
+}
+a:hover{
+font-size: 30px;
+box-shadow: 2px 2px 10px lightgray;
+border-radius: 10px;
+}
+hr:hover{
+	box-shadow: 1px 1px 1px lightgray;
+}
+@keyframes hed{
+	0%{display: none;color:palevioletred;}
+	25%{color: red;}
+	50%{color: yellow;}
+	100%{color:white;}
+
+}
+#h11{
+	padding-top: 300px;
+	text-shadow:4px 4px 5px aqua,6px 6px 7px blue,12px 12px 10px palevioletred;
+	font-family: Source Sans Pro;
+
+	font-size:60px;
+	color:springgreen;
+	animation-name:hed;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+/*#hr1{
+	background-color:ghostwhite;
+	width:220px;
+	height: 3px;
+	}*/
+	/*#di1{
+		background-image: url(video.mp4);
+	}*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#dp{
+			height:500px;
+			width:1250px;
+		}
+		@keyframes leftdiv{
+			0%{width:0px;height:500px;background-color: red}
+			90%{width:100px;height:500px;background-color: blue}
+		}
+		@keyframes rightdiv{
+			0%{width:0px;height:500px;background-color: blue}
+			90%{width:625px;height:500px;background-color: red}
+100%{width:0px;height:500px;background-color: blue}
+
+		}
+		#dl{
+			height:500px;
+			width:100px;
+			background-color:red;
+			animation-name:leftdiv;
+			animation-duration:10s;
+			float:left;
+			position: fixed;
+			animation-iteration-count:infinite;
+
+					}
+		#dr{
+			height:500px;
+			width:0px;
+			background-color:blue;
+			animation-name:rightdiv;
+			animation-duration:5s;
+			float:right;
+			animation-iteration-count:infinite;
+
+		}
+		@keyframes dipl{
+			0%{color:white;}
+80%{color:red}
+100%{color:red}
+
+		}
+		#disp{
+			color:red;
+			animation-name: dipl;
+			animation-duration: 6s;
+		}
+	</style>
+</head>
+<body>
+<div style="height: 200px;width: 100px;">
+	<button style="background-image:url('images/caluc.jpg');height: 100px;width: 100px;background-size: 100px 100px;background-repeat: no-repeat;" onmouseover="fun()" id="dl"></button>
+</div>
+<script type="text/javascript">
+let i=0;
+	fun=()=>
+	{
+		i++;
+		document.getElementById('dl').style.display="block"
+		document.getElementById('dl').style.cssText="animation-name:leftdiv;"
+		if(i==2)
+		{
+		document.getElementById('dl').style.display="none"
+		i=0;
+		}
+	}
+</script>
+</body>
+</html>

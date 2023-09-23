@@ -1,0 +1,6 @@
+
+
+to-do
+1.have to create middle page for index page and games.
+2.add exit buttons for all pages
+3.check working of all

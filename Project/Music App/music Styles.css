@@ -1,0 +1,94 @@
+
+
+/* Reset some default styles */
+body{
+    margin: 0;
+    padding: 0;
+   
+    background-image: url('images/bg img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 8px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.featured-song {
+    text-align: center;
+    margin-top: 32px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+}
+ 
+.div{
+    height: 250px;
+    width: 1100px;
+}
+
+.div1{
+    height: 250px;
+    width: 250px;
+    margin: 10px 10px 10px -250px;
+    float:left;
+
+}
+
+.div11{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    float: left;
+
+}
+a{
+    text-decoration:none ;
+    color:white;
+}
+ a:hover{
+        font-size: 20px;
+    }

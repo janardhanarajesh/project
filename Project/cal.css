@@ -1,0 +1,113 @@
+body {
+/*    display: flex;*/
+    justify-content: center;
+   /* align-items: center;
+    height: 100vh;  */
+}
+.cal{
+    font-size:40px;
+/*    height:90px;*/
+     text-shadow: 10px 10px 10px darkgrey;
+/*    border: 10px;*/
+
+}
+#bak{
+    height:40px;
+background-color: blue;
+color:yellow;
+}
+#bak:hover{
+    background-color: red;
+    box-shadow: 3px 3px red;
+}
+.back{
+            display: flex;
+            flex-direction: column;
+             margin-bottom:5px;
+             height:20px;
+
+}
+#bg{
+    color:darkred;
+    font-weight:bold;
+
+}
+
+.calculator {
+    border: 10px solid #000000;
+    border-radius: 8px;
+    width:500px;
+    height:500px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#display {
+    width:380px;
+    margin-bottom:20px;
+    font-size: 30px;
+    color:black;
+    background-color:#ccc;
+    height:40px;
+    text-align:right;
+    font-weight:bold;
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color:white;
+    color:yellow;
+    font-weight:bold;
+
+}
+
+.ki{
+    padding: 15px;
+    font-size: 30px;
+    background-color: blue;
+
+    cursor: pointer;
+    border-radius: 5px;
+    color:yellow;
+}
+
+.ki:hover {
+    background-color: red;
+    box-shadow: 5px 2px red;
+
+}
+#d2{
+    height:300px;
+    width:250px;
+    background-color:black;
+    float:right;
+    border-radius:10px;
+    box-shadow: 2px 2px 50px black;
+    
+}
+#btn_1{
+    background-color:grey;
+    border-radius:6px;
+    width:50px;
+    float:right;
+
+}
+.a1{
+    text-decoration: none;
+    color:white;
+
+}
+a:hover{
+font-size: 30px;
+box-shadow: 2px 2px 10px lightgray;
+border-radius: 10px;
+}
+hr:hover{
+    box-shadow: 1px 1px 1px lightgray;
+}
+#btn_1{
+    float:right;
+}

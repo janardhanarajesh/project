@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image:url(../../images/gamebackground3.jpg);
+}
+
+canvas {
+  display:block;
+  margin: 40px auto 20px;
+  border: 1px solid pink;
+  box-shadow: 0 0 16px 2px rgba(0,0,0,0.8);
+  background-color: yellow;
+  height: 500px;
+  width: 900px;
+}
+
+p, a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: ghostwhite;
+  background-color: black;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration:none;
+}
+
+.info {
+  margin:14px auto;
+  text-align: justify;
+  font-size: 18px;
+  color: blue;
+}
+
+a {
+  color:#3377ee;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<input type="text" id="in1" onfocus="ofn('d1')" onchange="onc('d1')">
+<input type="text" id="in2" onfocus="ofn('d2')" onchange="onc('d2')">
+<input type="text" id="in3" onfocus="ofn('d3')" onchange="onc('d3')">
+<script type="text/javascript">
+	ofn=(k)=>
+	{
+		if(k=='d1')
+		{
+let a=document.getElementById('in1').value="x"
+}
+if(k=='d2')
+		{
+let b=document.getElementById('in2').value="x"
+}
+if(k=='d3')
+		{
+let c=document.getElementById('in3').value="x"
+}
+	}
+	onc=(l)=>
+	{
+		if(l=='d1')
+		{
+if(document.getElementById('in1').value=='x')
+{
+	document.write('ok')
+}
+}
+if(l=='d2')
+		{
+document.getElementById('in2').value="x"
+}
+if(l=='d3')
+		{
+document.getElementById('in3').value="x"
+}
+	}
+</script>
+</body>
+</html>

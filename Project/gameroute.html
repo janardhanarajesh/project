@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		*{
+			box-sizing:border-box;
+
+		}
+		@keyframes nim{
+			0%{background: yellow; }
+			50%{background: red;color: white;font-size: 600%;padding-top: 8%;}
+			50%{background: red;color: white;font-size: 600%;padding-top: 8%;}
+
+			100%{background: yellow; }
+
+	
+		}
+		#div1:hover{
+			animation-name: nim;
+			animation-duration: 2s;
+			animation-timing-function: ease;
+			animation-iteration-count: infinite;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+			font-size: 15px;
+		}
+	a:hover{
+font-size: white;
+			font-size: 20px;
+
+	}
+	#div1{
+		color: blue;
+		box-shadow: 5px 5px 8px white, 8px 8px 12px black;
+		border-radius: 18px;
+	}
+	</style>
+</head>
+<body background="images/gamebackground.jpg">
+	<center><h1 style="color:white;">WEB GAMES</h1></center>
+		<button onclick="clickt()" style="width:50px;height:30px;position:fixed;box-shadow: 1px 1px 8px mediumturquoise;background-color:lightgoldenrodyellow ;border-radius: 5px;">Menu</button>
+			<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	
+			<div style="height:320px;width:100px;background-color:rgba(0, 0, 5, 0.4);position: fixed;top:120px;border-radius: 8px;text-align:center;box-shadow: 1px 1px 10px aquamarine;" id="men1">
+				
+				<br>
+				<a href="main.html">Home</a>
+				<br>
+				<br>
+
+				<a href="caluclatorroute.html">Caluclator</a>
+				<br>
+				<br>
+<a  href="music app/Music web.html" class='a1'>Music Player</a>
+<br>		
+<br>
+
+				<a href="gameroute.html">Games</a>
+				<br>
+				<br>
+
+				<a href="converterroute.html">Converter</a>
+				<br>
+				<br>
+			
+
+<a href="library/books.html" >web library</a>
+<br>
+<br>
+		<a href="quize/quize1.html"> quiz</a>
+	<br>
+
+			</div>
+<a href="memorygame.html"><div id="div1" style="height:50%;width:20%;position:absolute;left:15%;top:20%;background:pink;text-align: center;font-size: 260%;padding-top:10% ;"><i class="fa-solid fa-brain"></i><p style="font-size: 20px;">memory game</p></div></a>
+<a href="rockpapersissors.html"><div id="div1" style="height:50%;width:20%;position:absolute;left:38%;top:20%;background:red ;text-align: center;font-size: 260%;padding-top:10% ;"><i class="fa-solid fa-hand-back-fist"></i><p style="font-size: 18px;">rock paper sissors</p></div></a>
+<a href="tictocto.html"><div  id="div1"style="height:50%;width:20%;position:absolute;left:60%;top:20%;background:orange;text-align: center;font-size: 260%;padding-top:10% ;"><i class="fa-solid fa-chess-board"></i><p style="font-size: 20px;">tictactoe</p></div></a>
+<a href="ball/dist/bal.html"><div id="div1" style="height:50%;width:20%;position:absolute;left:15%;top:76%;background:gold;text-align: center;font-size: 260%;padding-top:10% ;">O<p style="font-size: 20px;">ball game</p></div></a>
+<a href="game/game.html"><div id="div1" style="height:50%;width:20%;position:absolute;left:60%;top:76%;background:coral;text-align: center;font-size: 260%;padding-top:10% ;">+<p style="font-size: 20px;">Additon adventure</p></div></a>
+<script type="text/javascript">
+	document.getElementById('men1').style.display="none"
+let i=0;
+clickt=()=>
+{
+i++;
+let kt=document.getElementById('men1').style.display="block"
+if(i==2)
+{
+let kt=document.getElementById('men1').style.display="none"
+i=0;
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<!-- <style>
+	*{
+		margin:0px;
+		padding:0px;
+		box-sizing:border-box;
+	}
+	</style> -->
+<body bgcolor="whitesmoke">
+	<center>
+	<div style="height:350px;width:750px">
+		<div style="height:45px;width:750px">
+		<div style="height:45px;width:375px;float:left;"><h2>your option</h2></div>
+		<div style="height:45px;width:375px;float:right"><h2>computers option</h2></div>
+</div>
+	<div id="out" style="height:300px;width:250px;float:left;"></div>
+
+	<div id="disp" style="height:300px;width:250px;float:left">
+	</div>
+	<div id="d1" style="height:300px;width:250px;float:left;"></div>
+
+</div>
+	<div id="ki" style="height:250px;width:766px">
+		<div style="height:250px;width:250px;background-image:url('images/rock.png');background-size: cover;float:left;border: 3px solid black;border-radius:20px;cursor: pointer;" onclick="rock()">
+			
+		</div>
+		<div style="height:250px;width:250px;background-image:url('images/paper.png');background-size: cover;float:left;border: 3px solid black;border-radius:20px;cursor: pointer;" onclick="paper()">
+			
+		</div>
+		<div style="height:250px;width:250px;background-image:url('images/sissor.png');background-size: cover;float:right;border: 3px solid black;border-radius:20px;cursor: pointer;" onclick="sissor()">
+			
+		</div>
+	</div>
+<button onclick="start()" style="height:40px;width:60px;font-size:12px;cursor:pointer">START</button>
+</center>
+<script type="text/javascript">
+	
+	
+	function rock()
+	{
+		var roc="<img src='images/rock.png' style='height:250px;width:250px'>";
+var arb=document.getElementById('out').innerHTML="<img src='images/rock.png' style='height:250px;width:250px'>";
+start=()=>
+	{
+	let arr=["<img src='images/rock.png' style='height:250px;width:250px'>","<img src='images/paper.png' style='height:250px;width:250px'>","<img src='images/sissor.png' style='height:250px;width:250px'>"]
+
+	let ran=arr[Math.floor(Math.random()*arr.length)];
+let a=document.getElementById('d1').innerHTML=ran;
+	if(ran==roc)
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:goldenrod'>TIE</h1></center>"
+}
+else if(ran=="<img src='images/paper.png' style='height:250px;width:250px'>")
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:red'>YOU LOST</h1></center>";
+}
+else if(ran=="<img src='images/sissor.png' style='height:250px;width:250px'>")
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:green'>YOU WON</h1></center>";
+}
+
+	}
+
+
+}
+		
+function paper()
+	{
+		var roc="<img src='images/paper.png' style='height:250px;width:250px'>";
+var arb=document.getElementById('out').innerHTML="<img src='images/paper.png' style='height:250px;width:250px'>";
+start=()=>
+	{
+	var arr=["<img src='images/rock.png' style='height:250px;width:250px'>","<img src='images/paper.png' style='height:250px;width:250px'>","<img src='images/sissor.png' style='height:250px;width:250px'>"]
+
+	var ran=arr[Math.floor(Math.random()*arr.length)];
+var a=document.getElementById('d1').innerHTML=ran;
+	if(ran==roc)
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:goldenrod'>TIE</h1></center>"
+}
+else if(ran=="<img src='images/rock.png' style='height:250px;width:250px'>")
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:green'>YOU WON</h1></center>"
+
+}
+else if(ran=="<img src='images/sissor.png' style='height:250px;width:250px'>")
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:red'>YOU LOST</h1></center>"
+
+}
+
+	}
+
+
+}
+function sissor()
+	{
+		var roc="<img src='images/sissor.png' style='height:250px;width:250px'>";
+var arb=document.getElementById('out').innerHTML="<img src='images/sissor.png' style='height:250px;width:250px'>";
+start=()=>
+	{
+	var arr=["<img src='images/rock.png' style='height:250px;width:250px'>","<img src='images/paper.png' style='height:250px;width:250px'>","<img src='images/sissor.png' style='height:250px;width:250px'>"]
+
+	var ran=arr[Math.floor(Math.random()*arr.length)];
+var a=document.getElementById('d1').innerHTML=ran;
+	if(ran==roc)
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:goldenrod'>TIE</h1></center>"
+}
+else if(ran=="<img src='images/rock.png' style='height:250px;width:250px'>")
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:red'>YOU LOST</h1></center>"
+
+}
+else if(ran=="<img src='images/paper.png' style='height:250px;width:250px'>")
+{
+	document.getElementById('disp').innerHTML="<br/><br/><br/><br/><br/><br><center><h1 style='color:green'>YOU WON</h1></center>"
+
+}
+	}
+
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div style="height:420px;width:620px;">
+		<div style="height:220x;width:604px;">
+			<div style="height:200px;width:200px;float:left;cursor:pointer;border:1px solid black" id="d11" onclick="guess('b11')">
+			</div>
+			<div style="height:200px;width:200px;float:left;cursor:pointer;border:1px solid black" id="d12" onclick="guess('b12')">
+			</div>
+			<div style="height:200px;width:200px;float:right;cursor:pointer ;border:1px solid black" id="d13" onclick="guess('b13')">
+			</div>
+		</div>
+		<div style="height:220px;width:604px;">
+			<div style="height:200px;width:200px;float:left;cursor:pointer;border:1px solid black" id="d21">
+			</div>
+			<div style="height:200px;width:200px;float:left;cursor:pointer;border:1px solid black" id="d22">
+			</div>
+			<div style="height:200px;width:200px;float:right;cursor:pointer;border:1px solid black " id="d23">
+			</div>
+		</div>
+	</div>
+	<br/>
+<button onclick="clicker()">start</button>
+<button onclick="evl()">start</button>
+
+	<br/>
+	<br/>
+	<br/>
+
+<div style="height:100px;width:300px;border:1px solid black" id="color1">
+	<div style="height:100px;width:100px;float:left;background: red;" onclick="colr('r')">
+	</div>
+	<div style="height:100px;width:100px;float:left;background: blue;" onclick="colr('b')">
+	</div>
+	<div style="height:100px;width:100px;float:right;background: yellow" onclick="colr('y')">
+	</div>
+	</div>
+<script type="text/javascript">
+document.getElementById('color1').style.display="none";
+
+	clicker=()=>
+	{
+		var arr1=["red","green",'blue','yellow','pink','black','gold','brown','gray']
+		var arr2=['red','green','blue','yellow','pink','black','gold','brown','gray']
+		var arr3=['red','green','blue','yellow','pink','black','gold','brown','gray']
+		var arr4=['red','green','blue','yellow','pink','black','gold','brown','gray']
+		var arr5=['red','green','blue','yellow','pink','black','gold','brown','gray']
+		var arr6=['red','green','blue','yellow','pink','black','gold','brown','gray']
+		var ran1=arr1[Math.floor(Math.random()*arr1.length)];
+		var ran2=arr2[Math.floor(Math.random()*arr2.length)];
+		var ran3=arr3[Math.floor(Math.random()*arr3.length)];
+		var ran4=arr4[Math.floor(Math.random()*arr4.length)];
+		var ran5=arr5[Math.floor(Math.random()*arr5.length)];
+		var ran6=arr6[Math.floor(Math.random()*arr6.length)];
+
+let block11=document.getElementById('d11').style.backgroundColor=ran1;
+let block12=document.getElementById('d12').style.backgroundColor=ran2;
+let block13=document.getElementById('d13').style.backgroundColor=ran3;
+let block21=document.getElementById('d21').style.backgroundColor=ran4;
+let block22=document.getElementById('d22').style.backgroundColor=ran5;
+let block23=document.getElementById('d23').style.backgroundColor=ran6;
+
+setTimeout(delay,3000)
+	}
+	delay=()=>
+	{
+	let block11=document.getElementById('d11').style.backgroundColor="";
+let block12=document.getElementById('d12').style.backgroundColor="";
+let block13=document.getElementById('d13').style.backgroundColor="";	
+let block21=document.getElementById('d21').style.backgroundColor="";
+let block22=document.getElementById('d22').style.backgroundColor="";
+let block23=document.getElementById('d23').style.backgroundColor="";
+guess=(a)=>
+{
+
+	if(a=="b11")
+	{
+let c=document.getElementById('color1').style.display="block";
+colr=(ct)=>
+{
+	if(ct=='r')
+	{
+ var b11=document.getElementById('d11').style.backgroundColor='red'
+ // document.write(b11)
+}
+else if(ct=='b')
+{
+	var b11=document.getElementById('d11').style.backgroundColor='blue'
+	}
+	else if(ct=='y')
+{
+	var b11=document.getElementById('d11').style.backgroundColor='yellow'
+	}
+}
+
+}
+
+else if(a=="b12")
+	{
+let c=document.getElementById('color1').style.display="block";
+colr=(ct)=>
+{
+	if(ct=='r')
+	{
+document.getElementById('d12').style.backgroundColor='red'
+}
+else if(ct=='b')
+{
+	document.getElementById('d12').style.backgroundColor='blue'
+	}
+	else if(ct=='y')
+{
+	document.getElementById('d12').style.backgroundColor='yellow'
+	}
+}
+
+}
+evl=()=>
+{
+ var b11=document.getElementById('d11').style.backgroundColor;
+		document.getElementById('d11').innerHTML=block11
+
+// 	if(block11==b11)
+// 	{
+// 	}
+// 	else
+// 	{
+// 		document.getElementById('d11').innerHTML="false"
+
+// 	}
+}
+}
+
+	}
+
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>

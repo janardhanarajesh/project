@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Calculator</title>
+    <style>
+    a{
+text-decoration: none;
+color: red;
+    }
+    a:hover{
+        font-size: 20px;
+    }
+</style>
+</head>
+<body style="background-color: lightgrey;">
+        <button onclick="clickt()" style="width:70px;height:30px;position:fixed;box-shadow: 1px 1px 8px red;background-color:aliceblue ;border-radius: 5px;">Menu</button>
+        
+    
+    
+            <div style="height:400px;width:150px;background-color:rgba(0,0, 0, 0.8);position: fixed;top:30px;border-radius: 8px;text-align:center;box-shadow: 1px 1px 10px black;" id="men1">
+                <br>
+                
+                    <a href="main.html">Home</a>
+                <br>
+                <br>
+                <a href="caluclatorroute.html">Caluclator</a>
+                <br>
+                <br>
+                <a  href="music app/Music web.html">Music Player</a>
+<br>        
+<br>
+                <a href="gameroute.html"> Games</a>
+                <br>
+                <br>
+                <a href="test2.html">Notes</a>
+                <br>
+                <br>
+                <a href="library/books.html">Web library</a>
+                <br>
+                <br>                <a href="converterroute.html">Converter</a>
+                <br>
+<br>
+        <a href="quize/quize1.html" > quiz</a>
+        <br>
+        <br>
+        <a href="periodic.html" class='a1' > periodic table</a>
+            </div>
+
+
+    <center>
+        <br>
+        <br>
+        <br>
+        
+    <div class="calculator" style="background-color:white;">
+        <input type="text" id="display" onchange="ch(this.value)">
+        <div class="buttons">
+            <button onclick="appendToDisplay('1')" class="ki">1</button>
+            <button onclick="appendToDisplay('2')" class="ki">2</button>
+            <button onclick="appendToDisplay('3')" class="ki">3</button>
+            <button onclick="appendToDisplay('4')" class="ki">4</button>
+            <button onclick="clearDisplay()" id="bg" class="ki">AC</button>
+            <button onclick="appendToDisplay('5')" class="ki">5</button>
+            <button onclick="appendToDisplay('6')"class="ki">6</button>
+            <button onclick="appendToDisplay('7')" class="ki">7</button>
+            <button onclick="appendToDisplay('8')" class="ki">8</button>
+            <button onclick="appendToDisplay('+')" id="bg" class="ki">+</button>
+            <button onclick="appendToDisplay('9')" class="ki">9</button>
+            <button onclick="appendToDisplay('0')" class="ki">0</button>
+            <button onclick="appendToDisplay('.')" class="ki">.</button>
+            <button onclick="calculate()" id="bg" class="ki">=</button>
+            <button onclick="appendToDisplay('-')" id="bg" class="ki">-</button>
+            <button onclick="sqry()" class="ki">√</button>
+            <button onclick="appendToDisplay('^')" class="ki">^</button> 
+            <button onclick="appendToDisplay('%')" class="ki">%</button>    
+            <button onclick="appendToDisplay('/')" id="bg" class="ki">/</button>
+            <button onclick="appendToDisplay('*')"id="bg" class="ki">x</button>
+        </div>
+        <br>
+         <div class="back">
+                <button onclick="backspace()" id="bak">BACK SPACE</button>
+             </div>
+    </div>
+    <script>
+        let displayValue = "";
+
+        function appendToDisplay(value) {
+            displayValue += value;
+            document.getElementById("display").value = displayValue;
+           
+        }
+
+        function backspace() {
+            displayValue = displayValue.slice(0, -1);
+            document.getElementById("display").value = displayValue;
+        }
+
+        function clearDisplay() {
+            displayValue = "";
+            document.getElementById("display").value = "";
+        }
+
+        function calculate() {
+            try {
+                displayValue = eval(displayValue).toString();
+                document.getElementById("display").value = displayValue;
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+        sqry=()=>
+        {
+           var fg= document.getElementById('display').value;
+            document.getElementById('display').value=Math.sqrt(fg)
+        }
+document.getElementById('men1').style.display="none"
+let i=0;
+clickt=()=>
+{
+i++;
+let kt=document.getElementById('men1').style.display="block"
+if(i==2)
+{
+let kt=document.getElementById('men1').style.display="none"
+i=0;
+}
+}
+ch=(val)=>
+{
+    if(val=="=")
+    {
+calculate();
+    }
+}
+    </script>
+    </center>
+</body>
+<script type="text/javascript" src=javascript.js></script>
+</html>

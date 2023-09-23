@@ -1,0 +1,9 @@
+thinness<17.0
+under weight=<18.5
+normal weight=18.5-24.9
+over weight=25-29.9
+obesity <=30
+Obesity class I – BMI 30 to 34.9 kg/m^2
+Obesity class II – BMI 35 to 39.9 kg/m^2
+Obesity class III – BMI greater than or equal to 40 kg/m^2 (also referred to as severe, extreme, or massive obesity)
+

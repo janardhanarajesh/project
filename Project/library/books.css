@@ -1,0 +1,93 @@
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url("img/b1.avif");
+            background-size: cover;
+              background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixed background position */
+    background-position: center center;
+        }
+
+        h1 {
+            text-align: center;
+            background-color:whitesmoke;
+            color: blue;
+            font-size:50px;
+           top: 0px;
+        }
+        
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .book-category {
+            width: 100%;
+            margin: 20px;
+/*            background-color: white;*/
+/*            border:  solid #ccc;*/
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .book-category h2 {
+            color: #333;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .book-list a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #007bff;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .book-list a:hover {
+              transform: scale(1.1); /* Scale the element to 110% of its original size on hover */
+    transition: transform 0.3s ease-in-out;
+        }
+
+        /* Set the maximum width and height for book images */
+        .book-list img {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            margin: 0;
+            border:2px solid yellow;
+        }
+
+        .book-title {
+            font-weight: bold;
+        }
+
+        /* Style for the image containers */
+        .book-image {
+            max-width: 90px;
+            max-height: 90px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+/*            padding: 5px;*/
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
